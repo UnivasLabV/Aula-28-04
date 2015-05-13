@@ -1,28 +1,40 @@
 <!DOCTYPE html>
-   
-    <html>
-    
-     <head>
-         
-         <title>IMC Calculator</title>
-    
-     </head>
-     <body>
-         
-         <h1>Imc Calculator</h1>
-         
-         <form action="">
-             <fieldset>
-                 <legend>IMC</legend>
-                 
-    <label for="height">Peso<input id="height" type="number"></label>
-    <label for="weight">Altura<input id=weight type="text"></label>
-                 
-    <input type="submit" value="calculate"
-                 
-             </fieldset>
-         </form>
-         
-     </body> 
-    
-</html>
+<html>
+<head>
+
+<meta charset="utf-8" />
+<title>IMC Calculator</title>
+
+</head>
+<body>
+
+<h1>IMC Calculator</h1>
+
+<form id="frm-imc" action="">
+	<fieldset>
+		<legend>IMC</legend>
+		
+		<label for="height">
+			Height
+			<input id="height" type="text" />
+		</label>
+		
+		<label for="weight">
+			Weight
+			<input id="weight" type="text" />
+		</label>
+		
+		<input type="submit" value="Calculate" />
+		
+	</fieldset>
+</form>
+
+<fieldset>
+	<legend>Result</legend>
+	<span id="result">0.00</span>
+</fieldset>
+
+<script src="js/IMCService.js"></script>
+<script src="js/IMCController.js"></script>
+
+</body>
